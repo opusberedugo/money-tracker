@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PendingIncomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="24dp"
+        app:cardElevation="24dp"
+        app:cardCornerRadius="20sp"
+        android:layout_margin="24dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/activity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginVertical="15sp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Recieved Income"
+                android:textColor="@color/primaryColor"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/income_total_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_title"
+                android:layout_marginVertical="10sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Total Income:"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/total_income_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_title"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginVertical="10sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="$00.00"
+                android:textColor="@color/secondaryDarkColor"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/last_update_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/income_total_label"
+                android:layout_marginVertical="10sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Last Update:"
+                android:textSize="18sp"
+                android:textColor="@color/primaryLightColor"/>
+
+            <TextView
+                android:id="@+id/last_update_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_income_value"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginVertical="10sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="dd/MM/YYYY"
+                android:textSize="18sp"
+                android:textColor="@color/secondaryDarkColor"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
